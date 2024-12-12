@@ -1,0 +1,27 @@
+# Differential gene expression: DESeq2
+name: fosl2-de
+
+channels:
+  - conda-forge
+  - bioconda
+  - r
+
+dependencies:
+  - bioconductor-deseq2
+  - bioconductor-edger
+  - r-irkernel
+  - jupyter_client
+  - bioconductor-enhancedvolcano
+  - r-tidyverse
+  - r-patchwork
+  - r-extrafont
+  - r-svglite
+
+# Install this environment from file using
+# CONDA_SUBDIR=osx-64 conda env create -f sc-de-mast.yml
+
+# Link this env to jupyter using
+# NAME=sc-de-mast; conda activate $NAME; Rscript -e "IRkernel::installspec(name = '${NAME}', displayname = '${NAME}')"; conda deactivate
+
+# Use osx-64 for all other package installations:
+# conda config --env --set subdir osx-64
