@@ -9,6 +9,7 @@ channels:
 dependencies:
   - bioconductor-deseq2
   - bioconductor-edger
+  - bioconductor-apeglm
   - r-irkernel
   - jupyter_client
   - bioconductor-enhancedvolcano
@@ -18,10 +19,10 @@ dependencies:
   - r-svglite
 
 # Install this environment from file using
-# CONDA_SUBDIR=osx-64 conda env create -f sc-de-mast.yml
+# CONDA_SUBDIR=osx-64 conda env create -f fosl2-de.yml
 
 # Link this env to jupyter using
-# NAME=sc-de-mast; conda activate $NAME; Rscript -e "IRkernel::installspec(name = '${NAME}', displayname = '${NAME}')"; conda deactivate
+# NAME=fosl2-de; conda activate $NAME; Rscript -e "IRkernel::installspec(name = '${NAME}', displayname = '${NAME}')"; conda deactivate
 
 # Use osx-64 for all other package installations:
 # conda config --env --set subdir osx-64
