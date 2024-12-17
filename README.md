@@ -16,3 +16,7 @@
 └── out
     ...
 ```
+
+# TODO
+- Make pretty volcano plots
+- Make boxplots of specific genes of interest: Fosl2, etc.
